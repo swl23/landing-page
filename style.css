@@ -41,11 +41,17 @@ body {
 .logo {
     display: flex;
     justify-content: flex-end;
+}
+
+.logo, .attribution, .call {
     font-size: 24px;
 }
 
-.logo, #awesome {
+.logo, #awesome, .attribution, .call {
     font-weight: 900;
+}
+
+.logo, #awesome {
     color: #F9FAF8;
 }
 
@@ -65,7 +71,7 @@ body {
     color: #E5E7EB;
 }
 
-.links a, #words, .caption {
+.links a, #words, .caption, .subtitle {
     font-size: 18px;
     font-weight: 200;
 }
@@ -102,13 +108,16 @@ body {
     width: 400px;
 }
 
-.left button {
+.left button, .act-box button {
     width: 120px;
     height: 30px;
-    border: none;
     border-radius: 5px;
     background-color: #3882F6;
     color: #F9FAF8
+}
+
+.left button {
+    border: none;
 }
 
 .random {
@@ -124,7 +133,7 @@ body {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
-    min-width: 800px;
+    min-width: 600px;
     flex: 1 0 auto;
     justify-content: space-around;
     text-align: center;
@@ -143,7 +152,7 @@ body {
 .each {
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 150px;
     gap: 6px;
 }
 
@@ -152,4 +161,78 @@ body {
     border: 1px solid #3882F6;
     border-radius: 5px;
     padding: 5px;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-color: #E5E7EB;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 600px;
+    font-size: 36px;
+    color: #1F2937;
+    font-family: 'Inter 28pt';
+    font-style: italic;
+    font-weight: 200;
+    gap: 12px;
+}
+
+.attribution {
+    align-self: flex-end;
+    font-style: normal;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.act-box {
+    min-width: 800px;
+    padding: 24px 36px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3882F6;
+    gap: 24px;
+    border-radius: 5px;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    color: #F9FAF8;
+}
+
+.act-box button {
+    flex-shrink: 0;
+    border: 1px solid #F9FAF8
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #1F2937;
+}
+
+.foot-text {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 200;
+    flex-shrink: 0;
 }
